@@ -176,7 +176,7 @@
     const message = document.getElementById('message').value;
 
     try {
-        const response = await fetch('https://backend-powerful.onrender.com/api/contact', {
+        const response = await fetch('/.netlify/functions/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
